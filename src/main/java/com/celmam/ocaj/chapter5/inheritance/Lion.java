@@ -4,6 +4,8 @@ import java.io.IOException;
 
 public class Lion extends Animal {
 
+	private int age=25;
+	
 	public Lion(int age) {
 		
 //		super(age);
@@ -18,6 +20,16 @@ public class Lion extends Animal {
 	public Lion() {
 		super();
 	}
+	
+	
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
 
 	private void roar() {
 		System.out.println("The " + getAge() + " year old lion says: Roar!");
@@ -30,7 +42,7 @@ public class Lion extends Animal {
 		return 4;
 	}
 	
-	public void metodoExeption() throws Exception {
+	public void metodoExeption() throws  IllegalAccessException{
 		
 		
 	}
