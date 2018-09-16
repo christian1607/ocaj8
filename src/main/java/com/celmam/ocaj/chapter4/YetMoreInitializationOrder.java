@@ -1,5 +1,6 @@
 package com.celmam.ocaj.chapter4;
 
+
 public class YetMoreInitializationOrder {
 
 	private static int numero;
@@ -12,17 +13,21 @@ public class YetMoreInitializationOrder {
 		System.out.print(num + " ");
 	}
 
+	public void method() {
+		
+	}
+	
 	YetMoreInitializationOrder() {
 		add(5);
 	}
 
 	static {
 		add(4);
-		
 	}
 
 	{
 		add(6);
+		method();
 		numero=4;
 	}
 

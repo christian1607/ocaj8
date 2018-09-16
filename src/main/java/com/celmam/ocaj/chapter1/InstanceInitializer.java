@@ -12,8 +12,13 @@ public class InstanceInitializer {
 	
 	{
 		System.out.println("First  block instance initializer");
-
+		
+		apellido="Altamirano";
+		apellido="A";
+		
 	}
+	
+	private String apellido="Ayala";
 
 	public static void main(String[] args) {
 
@@ -23,6 +28,7 @@ public class InstanceInitializer {
 	}
 
 	{
+		System.out.println("apellido: "+apellido);
 		System.out.println("This is a block instance initializer");
 
 	}

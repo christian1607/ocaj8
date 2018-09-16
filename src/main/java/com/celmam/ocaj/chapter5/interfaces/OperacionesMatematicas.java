@@ -12,7 +12,7 @@ public abstract interface OperacionesMatematicas {
 
 	public int dividir(int a, int b);
 
-	default String descripcion() {
+	default  String descripcion() {
 
 		return "implementar las cuatro operaciones basicas.";
 	}
@@ -25,6 +25,12 @@ public abstract interface OperacionesMatematicas {
 	default String descripcion3() {
 
 		return "implementar las cuatro operaciones basicas.";
+	}
+	
+	
+	static int potencia() {
+		
+		return 2;
 	}
 	// private int dividir2(int a, int b);
 

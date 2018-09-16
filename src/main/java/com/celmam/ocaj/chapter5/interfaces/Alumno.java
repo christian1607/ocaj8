@@ -29,6 +29,15 @@ public class Alumno implements OperacionesMatematicas {
 	
 	
 	
+	
+	@Override
+	public String descripcion2() {
+		// TODO Auto-generated method stub
+		return OperacionesMatematicas.super.descripcion2();
+	}
+
+
+
 	public static void main (String args[]) {
 		
 			OperacionesMatematicas alumno1=new Alumno();
@@ -38,7 +47,8 @@ public class Alumno implements OperacionesMatematicas {
 			System.out.println(alumno1.mutliplicar(4, 2));
 			System.out.println(alumno1.dividir(4, 2));
 			System.out.println(alumno1.descripcion());
-		
+			System.out.println(OperacionesMatematicas.potencia());
+			
 	}
 
 }
