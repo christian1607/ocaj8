@@ -21,6 +21,12 @@ public class LogicalOperator {
 		 * operator with at least one true the result is true.
 		 * */
 		
+		
+		int a=10;
+		
+		int b=++a;
+		System.out.println("Value of B:"+ b);
+		
 	}
 	
 }

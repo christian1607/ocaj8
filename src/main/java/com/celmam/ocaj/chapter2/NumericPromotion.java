@@ -18,15 +18,17 @@ public class NumericPromotion {
 		long num3 = 12333434;
 
 		// If two values have different data types, Java will automatically promote one
-		// of the val-
-		// ues to the larger of the two data types.
-		long mult = num3 * 2;
+		// of the values to the larger of the two data types.
+		long mult = num1 * 2;
 		// int mult2=num3*2;
 
 		short num5 = 3;
 		short num6 = 10;
+		
 
 		double sum4=num5+num6;
+		long sum41=num5+num6;
+		int sum42=num5+num6;
 		
 		/*
 		 * Smaller data types, namely byte , short , and char , are first promoted to
@@ -45,6 +47,43 @@ public class NumericPromotion {
 		
 		byte sum2 = (byte) (a + b);
 		System.out.println(sum);
+		
+		
+		short x = 14;
+		float y = 13;
+		double z = 30;
+		
+		z=x * y / z;
+		
+		
+		
+		double resultado=3.4%2;
+		System.out.println(resultado);
+		
+		double resultado2=3.4/2;
+		System.out.println(resultado2);
+		
+		
+		
+		
+		double doublenumber=2.3;
+		float floatnumber=2.3f;
+		
+		double resultado3 = doublenumber+floatnumber;
+		
+		// short byte char  ===>int
+		
+		char ab='5';
+		int res=ab+2;
+		System.out.println(res);
+		
+		
+		
+		short shor1=10;
+		short shor2=12;
+		
+		double shor3=shor1+shor2;
+		
 	}
 
 }
