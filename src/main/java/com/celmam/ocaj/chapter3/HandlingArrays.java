@@ -9,14 +9,29 @@ public class HandlingArrays {
 	public static void main (String... strings) {
 		
 		//there are many ways to create a array 
+		
+		//one dimention
 		int[] array1=new int[3];
 		int array4[]=new int[3];
 		int[] array2=new int[] {3,2,1};
 		int[] array3= {2,3,4};
 		
-		int []sd=new int [3];
+		// puede estar pegado, la instancia significa el tamanio del array int[3]=3 ==> 0, 1, 2
+		int []array=new int [3];
+		int array7[]=new int [3];
+		
+		//multiple dimetion
+			
+		array1[0]=1;
+		array1[1]=2;
+		array1[2]=Integer.valueOf("3");
+		
+		//array1[3]=Integer.valueOf("5");	java.lang.ArrayIndexOutOfBoundsException
 		
 		
+		System.out.println("Array: "+array1[0]);
+		System.out.println("Array: "+array1[1]);
+		System.out.println("Array: "+array1[2]);
 		
 		
 		

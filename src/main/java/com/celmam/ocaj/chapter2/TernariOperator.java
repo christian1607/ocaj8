@@ -6,11 +6,16 @@ public class TernariOperator {
 
 		int x = 1;
 
-		System.out.println(x > 2 ? x < 4 ? 10 : 8 : 7);
+		
+		System.out.println(x > 2?"Mayor que 2":"Menor que 2");
+		
+		System.out.println(x > 2?"String":2);
+		
+		System.out.println(x > 0 ? x < 4 ? 10 : 8 : 7);
 
-		String valor="a";
-		valor+="b";
-		System.out.println(valor);
+		System.out.println(++x > 1 ? x++ : ++x);
+		
+		
 	
 	}
 

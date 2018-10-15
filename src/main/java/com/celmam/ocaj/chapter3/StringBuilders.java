@@ -40,6 +40,16 @@ public class StringBuilders {
 		StringBuilder puzzle=new StringBuilder("ABCD");
 		puzzle.append("vaJ$").substring(0, 4);
 		System.out.println(puzzle);
+		
+		
+		StringBuilder testDiferenteTipos=new StringBuilder("Test");
+		testDiferenteTipos.append(true).append(1);
+		System.out.println(testDiferenteTipos);
+		
+		
+		StringBuilder reverseWord=new StringBuilder("Altamirano");
+		reverseWord.reverse();
+		System.out.println(reverseWord);
 	}
 
 	

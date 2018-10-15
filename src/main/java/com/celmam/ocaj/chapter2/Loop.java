@@ -12,13 +12,38 @@ public class Loop {
 			}
 		}
 
-	
-	
+		// This is a infinit loop
+		// for (int i = 0; i < 10;) {
+		// System.out.println("Hello World");
+		// }
+
+		// Solve
 		for (int i = 0; i < 10;) {
-
-			i = i++;
-
+			i = ++i;
 			System.out.println("Hello World");
 		}
+
+		for (int i = 0; i < 10; ++i) {
+			System.out.println("i=" + i);
+		}
+
+		for (int i = 0; i < 10; i++) {
+			System.out.println("i=" + i);
+		}
+
+		int w = 0;
+		for (long y = 0, z = 4;w < 5 && y < 10; w++, y++) {
+			System.out.print(y + " ");
+		}
+		System.out.print(w);
+		
+		//Another infinty bucle
+//		for (;;) {
+//			System.out.println("Infinty bucle");
+//		}
+		
+		
+
+		
 	}
 }
