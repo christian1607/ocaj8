@@ -12,6 +12,9 @@ public class ArrayLists {
 		ArrayList list = new ArrayList<>();
 		list.add(2);
 		list.add("Cadena");
+		
+		System.out.println("Size list: "+list.size());
+
 
 		int numero = 3;
 		list.add(numero);
@@ -97,6 +100,14 @@ public class ArrayLists {
 		else
 			System.out.println("C");
 
+	
+		
+	
+	
 	}
 
+	
+	
+	
+	
 }

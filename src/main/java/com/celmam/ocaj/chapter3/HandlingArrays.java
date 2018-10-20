@@ -2,6 +2,10 @@ package com.celmam.ocaj.chapter3;
 
 import java.util.Arrays;
 
+import com.celmam.ocaj.chapter5.inheritance.Animal;
+import com.celmam.ocaj.chapter5.inheritance.Bear;
+import com.celmam.ocaj.chapter5.inheritance.Lion;
+
 public class HandlingArrays {
 
 	
@@ -20,7 +24,9 @@ public class HandlingArrays {
 		int []array=new int [3];
 		int array7[]=new int [3];
 		
-		//multiple dimetion
+		
+	
+		
 			
 		array1[0]=1;
 		array1[1]=2;
@@ -44,17 +50,29 @@ public class HandlingArrays {
 		System.out.println(java.util.Arrays.toString(animales));
 		
 		
+		
+		Animal animals[]=new Animal[3];
+		animals[0]=new Bear();
+		animals[1]=new Lion();
+		animals[1]=new Animal();
+		
+		System.out.println("Cantidad de animales"+animals.length);
+		
+		
 		//Sort 
 		
 		int[] numerosDesordenados= {2,3,7,5};
 		String[] numeroString= {"10","9","1000"};
 		
 		
-	
 		Arrays.sort(numeroString);
 		Arrays.sort(numerosDesordenados);
 		Arrays.sort(animales);
 		System.out.println("@@@@"+Arrays.binarySearch(numeroString, "1000"));
+		
+		
+		
+		
 		
 		
 		System.out.println(Arrays.toString(numeroString));
@@ -66,7 +84,12 @@ public class HandlingArrays {
 //		scores.length;
 		int tamanio=scores.length;
 		
+		
+		//multiple dimetion
 		int[][] java = new int[0][];
+		int[] intNumber[]=new int[1][2];
+		int intNumber2[][]=new int[8][2];
+		int intNumber3[][]= {{1,3},{2,3}};
 		
 	}
 	

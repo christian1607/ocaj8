@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
 import java.time.Period;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
@@ -17,14 +18,34 @@ public class DatesAndTimes {
 		LocalTime time = LocalTime.now();
 		LocalDateTime datetime = LocalDateTime.now();
 
-		System.out.println(date);
-		System.out.println(time);
-		System.out.println(datetime);
+		System.out.println("Fecha actual: "+date);
+		System.out.println("Hora actual: "+time);
+		System.out.println("Fecha y Hora actual: "+datetime);
 
+
+		System.out.println("Restando un dia: "+date.plusDays(-1));
+
+		
+		
 		// set specific dates
 
+		int diaAnio=144;
+		int anio=2018;
+		System.out.println("El dia "+diaAnio+ " del anio "+anio+" fue: "+LocalDate.ofYearDay(anio,diaAnio));
+		
+		//You can specific year month and day
 		System.out.println(LocalDate.of(2018, 1, 30));
+		System.out.println("Maxima fecha soportada: "+LocalDate.MAX);
+		System.out.println("Minima fecha soportada: "+LocalDate.MIN);
 		System.out.println(LocalDate.of(2018, Month.JULY, 30));
+		
+		// You can set a date from another Date Time or DateTime
+		System.out.println("from date: "+LocalDate.from(date));
+		
+		
+		// In this case when the LocalDate.from(time), the parameter is an LocalTime, we get a exception
+		// java.time.DateTimeException: Unable to obtain LocalDate from TemporalAccessor: 
+		System.out.println("from time: "+LocalDate.from(time));
 
 		// System.out.println(LocalTime.of(18,69,25,500));
 
