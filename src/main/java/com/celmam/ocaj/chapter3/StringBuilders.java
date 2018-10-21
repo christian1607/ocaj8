@@ -16,6 +16,7 @@ public class StringBuilders {
 		StringBuilder stringBuilder4=new StringBuilder("xxxx");
 		StringBuilder stringBuilder3=new StringBuilder(10);
 
+		
 		System.out.println(stringBuilder.toString());
 		System.out.println(stringBuilder2.toString());
 		System.out.println(stringBuilder3.toString());
@@ -50,8 +51,20 @@ public class StringBuilders {
 		StringBuilder reverseWord=new StringBuilder("Altamirano");
 		reverseWord.reverse();
 		System.out.println(reverseWord);
+		
+		
+		StringBuilder wordmagic=new StringBuilder("Altamirano");
+		System.out.println(wordmagic.substring(1,3).length());
+		System.out.println(wordmagic);
+		
+		
+		String cadena="Altamirano";
+		
+		//cannot compare == 
+//		if(wordmagic==cadena) {
+//			System.out.println("Iguales");
+//		}
 	}
-
 	
 	
 	

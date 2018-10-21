@@ -79,9 +79,20 @@ public class DatesAndTimes {
 		
 		date = date.plusDays(2).minusDays(3);
 		date = date.plusWeeks(1);
-		date.isLeapYear();
 		System.out.println(date);
-
+		//Metodo que retorna true si el la fecha corresponde a un anio bisiesto
+		date.isLeapYear();
+		System.out.println(date.isLeapYear());
+		
+		
+		System.out.println(date.getDayOfMonth());
+		System.out.println(date.getDayOfWeek());
+		System.out.println(date.getDayOfYear());
+		
+		//Before or After Jesuscrist
+		System.out.println(date.getEra());
+		
+		
 		// Periods
 		LocalDateTime fechaCumple = LocalDateTime.of(1993, 07, 13, 13, 30, 12, 500);
 		System.out.println("Fecha Cumple==>" + fechaCumple);
@@ -94,15 +105,17 @@ public class DatesAndTimes {
 
 		// Formating
 		System.out.println("Formato Basico====>" + fechaCumple.format(DateTimeFormatter.BASIC_ISO_DATE));
-		System.out.println("Formato Basico====>" + fechaCumple.format(DateTimeFormatter.ISO_DATE));
-		System.out.println("Formato Basico====>" + fechaCumple.format(DateTimeFormatter.ISO_DATE_TIME));
-		System.out.println("Formato Basico====>" + fechaCumple.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+		System.out.println("Formato ISO DATE====>" + fechaCumple.format(DateTimeFormatter.ISO_DATE));
+		System.out.println("Formato ISO DATETIME====>" + fechaCumple.format(DateTimeFormatter.ISO_DATE_TIME));
+		System.out.println("Formato Custom====>" + fechaCumple.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 
 		DateTimeFormatter formatoPeru = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
 		System.out.println("Formato Corto====>" + fechaCumple.format(formatoPeru));
 
+
+		//Parsing dates from String
 		LocalDate dates = LocalDate.parse("2018-04-30", DateTimeFormatter.ISO_LOCAL_DATE);
-		dates.plusDays(2);
+		System.out.println(LocalDate.parse("1993-05-07").format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 
 		System.out.println(dates.getYear() + " " + dates.getMonth() + " " + dates.getDayOfMonth());
 

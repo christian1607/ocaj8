@@ -44,7 +44,7 @@ public class StringClass {
 
 		System.out.println(frase.charAt(0));
 		System.out.println(frase.charAt(1));
-
+		
 		// indexof
 
 		System.out.println(frase.indexOf("'"));
@@ -52,6 +52,7 @@ public class StringClass {
 		System.out.println(frase.indexOf("be", 7));
 
 		// substring
+		System.out.println("substring"+frase.substring(1,1));
 
 		// replace
 
@@ -73,8 +74,14 @@ public class StringClass {
 		 if ( a.equals("2cfalse")) System.out.println("equals");
 		
 		
+		 
+		 String letters = "abcdef";
+		 System.out.println(letters.length());
+		 System.out.println(letters.charAt(3));
+		 System.out.println(letters.charAt(6));
 		
-
+		 
+		
 	}
 
 }

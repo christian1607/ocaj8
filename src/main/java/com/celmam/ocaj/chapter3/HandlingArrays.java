@@ -17,6 +17,10 @@ public class HandlingArrays {
 		//one dimention
 		int[] array1=new int[3];
 		int array4[]=new int[3];
+		
+		System.out.println("Array: "+array1.equals(array4));
+		
+		
 		int[] array2=new int[] {3,2,1};
 		int[] array3= {2,3,4};
 		
@@ -26,8 +30,6 @@ public class HandlingArrays {
 		
 		
 	
-		
-			
 		array1[0]=1;
 		array1[1]=2;
 		array1[2]=Integer.valueOf("3");
@@ -50,7 +52,7 @@ public class HandlingArrays {
 		System.out.println(java.util.Arrays.toString(animales));
 		
 		
-		
+		System.out.println(animales.length);
 		Animal animals[]=new Animal[3];
 		animals[0]=new Bear();
 		animals[1]=new Lion();
