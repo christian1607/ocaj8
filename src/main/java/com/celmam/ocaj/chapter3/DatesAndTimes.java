@@ -45,14 +45,41 @@ public class DatesAndTimes {
 		
 		// In this case when the LocalDate.from(time), the parameter is an LocalTime, we get a exception
 		// java.time.DateTimeException: Unable to obtain LocalDate from TemporalAccessor: 
-		System.out.println("from time: "+LocalDate.from(time));
+		//System.out.println("from time: "+LocalDate.from(time));
 
-		// System.out.println(LocalTime.of(18,69,25,500));
+		 
+		// Get a exception when the minutes introduced is a invalid
+		//System.out.println(LocalTime.of(18,69,25,500));
 
-		//
+		// LocalTime
 
+		System.out.println("Midnight: "+LocalTime.MIDNIGHT);
+		System.out.println("Noon: "+LocalTime.NOON);
+		System.out.println("Max Time: "+LocalTime.MAX);
+		System.out.println("Min Time: "+LocalTime.MIN);
+		
+		int segundo=65555;
+		System.out.println("El segundo "+ segundo+" del dia, es igual a "+LocalTime.ofSecondOfDay(segundo));
+		
+		
+		
+		
+		//LocalDateTime
+		
+		//Can be composed from a date a time
+		System.out.println("LocalDateTime compuesto: "+LocalDateTime.of(date, time));
+		
+		
+		
+		
+		
+		
+		
+		//OPERATIONS WITH DATES AND TIMES
+		
 		date = date.plusDays(2).minusDays(3);
 		date = date.plusWeeks(1);
+		date.isLeapYear();
 		System.out.println(date);
 
 		// Periods
