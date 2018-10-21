@@ -32,18 +32,20 @@ public class Loop {
 		}
 
 		int w = 0;
-		for (long y = 0, z = 4;w < 5 && y < 10; w++, y++) {
+		for (long y = 0, z = 4; w < 5 && y < 10; w++, y++) {
 			System.out.print(y + " ");
 		}
 		System.out.print(w);
-		
-		//Another infinty bucle
-//		for (;;) {
-//			System.out.println("Infinty bucle");
-//		}
-		
-		
 
-		
+		// Another infinty bucle
+		// for (;;) {
+		// System.out.println("Infinty bucle");
+		// }
+
+		int myArray[] = { 1, 2, 3, 4, 5 };
+		for (int n : myArray) {
+			System.out.println(n);
+		}
+
 	}
 }

@@ -78,10 +78,22 @@ public class StringClass {
 		 String letters = "abcdef";
 		 System.out.println(letters.length());
 		 System.out.println(letters.charAt(3));
-		 System.out.println(letters.charAt(6));
+		 //System.out.println(letters.charAt(6));
 		
 		 
 		
+		 
+		 String empresa="mifarma";
+		 String empresa2="mi";
+		 
+		 empresa2+="farma";
+		 
+		 System.out.println(empresa);
+		 System.out.println(empresa2);
+		 System.out.println(empresa==empresa2);
+			
+			 
+		 
 	}
 
 }

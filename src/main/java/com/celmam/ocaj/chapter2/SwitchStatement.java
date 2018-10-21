@@ -27,7 +27,7 @@ public class SwitchStatement {
 		case 1:
 			System.out.println("Monday");	
 		
-		case 6:
+		case 2*3:
 			System.out.println("Saturday");
 			break;
 		default:

@@ -84,6 +84,9 @@ public class NumericPromotion {
 		
 		double shor3=shor1+shor2;
 		
+		
+		System.out.println( 16  >>>  1); 
+
 	}
 
 }
