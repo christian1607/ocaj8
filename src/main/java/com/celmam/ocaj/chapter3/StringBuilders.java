@@ -1,5 +1,7 @@
 package com.celmam.ocaj.chapter3;
 
+import java.util.Date;
+
 public class StringBuilders {
 
 	/*
@@ -39,7 +41,7 @@ public class StringBuilders {
 		
 		
 		StringBuilder puzzle=new StringBuilder("ABCD");
-		puzzle.append("vaJ$").substring(0, 4);
+		puzzle.append("vaJ$").append(new Date()).substring(0, 4);
 		System.out.println(puzzle);
 		
 		
