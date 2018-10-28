@@ -5,5 +5,4 @@ public interface ILambdaFunction2 {
 	String  saludar() ;
 	
 	
-	
 }

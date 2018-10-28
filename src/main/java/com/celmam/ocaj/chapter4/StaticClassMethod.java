@@ -46,7 +46,7 @@ public class StaticClassMethod {
 	}
 
 	public static void main(String... strings) {
-
+		System.out.println("Iniciando...");
 		StaticClassMethod classMethod = new StaticClassMethod();
 
 		System.out.println("contador: "+classMethod.contador);
