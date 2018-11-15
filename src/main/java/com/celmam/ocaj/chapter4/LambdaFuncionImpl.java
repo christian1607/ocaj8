@@ -18,10 +18,12 @@ public class LambdaFuncionImpl   {
 		LambdaFuncionImpl evaluar=new LambdaFuncionImpl();
 		//there are multiple ways to implement a lambda function
 		System.out.println(evaluar.isFunction("lambda", (String a)->{return a.equals("lambda");}));
-		System.out.println(evaluar.isFunction("lambda", (a)->{return a.equals("lambda");}));
-		System.out.println(evaluar.isFunction("lambda", (a)->a.equals("lambda")));
+		System.out.println(evaluar.isFunction("lambda", a->{return a.equals("lambda");}));
+		System.out.println(evaluar.isFunction("lambda", (String a)->a.equals("lambda")));
 		System.out.println(evaluar.isFunction("lambda",  a-> a.equals("lambda")));
-	
+//		System.out.println(evaluar.isFunction("lambda",  a-> {a.equals("lambda")}));
+//		System.out.println(evaluar.isFunction("lambda",  a-> {a.equals("lambda");}));
+		System.out.println(evaluar.isFunction("lambda", (String a)->{return a.equals("lambda");}));
 	
 		//Predicates 
 		

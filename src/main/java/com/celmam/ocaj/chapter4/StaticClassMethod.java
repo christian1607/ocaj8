@@ -17,6 +17,8 @@ public class StaticClassMethod {
 	private int edad=25;
 	public static final List<String> lista =new ArrayList<>();
 	public static StringBuilder builder=new StringBuilder();
+	
+	static String valorScopeDefault;
 
 	static {
 		System.out.println("first static initializer");

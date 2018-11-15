@@ -17,7 +17,7 @@ public class HandlingArrays {
 		//one dimention
 		int[] array1=new int[3];
 		int array4[]=new int[3];
-		
+		System.out.println(array1);
 		System.out.println("Array: "+array1.equals(array4));
 		
 		

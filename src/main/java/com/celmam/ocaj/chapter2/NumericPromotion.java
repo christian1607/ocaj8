@@ -2,6 +2,9 @@ package com.celmam.ocaj.chapter2;
 
 public class NumericPromotion {
 
+	
+	
+
 	public static void main(String... strings) {
 
 		/*
@@ -84,9 +87,10 @@ public class NumericPromotion {
 		
 		double shor3=shor1+shor2;
 		
-		
+		long az=res+2;
 		System.out.println( 16  >>>  1); 
 
+			
 	}
 
 }

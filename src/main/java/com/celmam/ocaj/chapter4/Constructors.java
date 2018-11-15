@@ -1,16 +1,19 @@
 package com.celmam.ocaj.chapter4;
 
+import com.celmam.ocaj.chapter4.modificatorPackage.ConstructorTest;
+
 public class Constructors {
 
 	private String name;
 	private String lastName;
 	private final String alias;
-
+	
 	public Constructors(String name, String lastName) {
 
 		// this.name = name;
 		// this.lastName = lastName;
 		this.alias = "lenki";
+		//Here the compiler DONT asume that the left name is pointing to instance variable of class Constructors
 		name = name;
 
 	}
@@ -39,6 +42,10 @@ public class Constructors {
 		c.methodifferentParameterName("Christian");
 		c.methodSameParameterName("Anddy");
 		System.out.println(c.name);
+		
+		
+		
+		
 	}
 
 }

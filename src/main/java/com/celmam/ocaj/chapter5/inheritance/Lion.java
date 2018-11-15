@@ -42,8 +42,16 @@ public class Lion extends Animal {
 		return 4;
 	}
 	
-	public void metodoExeption() throws  IllegalAccessException{
-		
-		
+	public void metodoExeption() {
+			
 	}
+	
+	public static String comer() {
+		System.out.println("Leon comiendo");
+		return "comiendo";
+	}
+
+	
+	
+	
 }

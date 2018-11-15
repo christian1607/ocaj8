@@ -9,7 +9,7 @@ public class Main {
 		System.out.println(figura.cantidadLados());
 		System.out.println(figura.queSoy());
 		
-
+		
 	}
 
 }

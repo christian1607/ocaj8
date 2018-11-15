@@ -1,6 +1,7 @@
 package com.celmam.ocaj.chapter4.modificatorPackage;
 
 import com.celmam.ocaj.chapter4.ModificatorAccess;
+import com.celmam.ocaj.chapter4.StaticClassMethod;
 
 public class Caller {
 
@@ -17,7 +18,7 @@ public class Caller {
 		//In this case we only can call public method and attribute, because this class doesn't 
 		//belong to the same package as ModificatoAccess
 		
-
+	
 	}
 
 }
