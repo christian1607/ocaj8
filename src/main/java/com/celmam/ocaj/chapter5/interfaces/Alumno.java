@@ -2,11 +2,14 @@ package com.celmam.ocaj.chapter5.interfaces;
 
 public class Alumno implements OperacionesMatematicas {
 
+	/* Si las metodos de las interfaces tiene el mismo nombre y mismo parametros pero diferentes
+	 * tipo de retorno, el codigo no compilara 
+	
+	*/ 
+	
 	@Override
 	public int sumar(int a, int b) {
-
 		return (a + b) ;
-
 	}
 
 
@@ -32,8 +35,8 @@ public class Alumno implements OperacionesMatematicas {
 	
 	@Override
 	public String descripcion2() {
-		// TODO Auto-generated method stub
-		return OperacionesMatematicas.super.descripcion2();
+		//Aqui se hace llamado al metodo por defecto que tiene la interfaz
+		return descripcion3();
 	}
 
 

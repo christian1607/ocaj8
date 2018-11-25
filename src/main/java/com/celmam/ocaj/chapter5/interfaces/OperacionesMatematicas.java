@@ -3,7 +3,11 @@ package com.celmam.ocaj.chapter5.interfaces;
 public abstract interface OperacionesMatematicas {
 
 	public int resultado = 1;
-
+	//El compilador transforma la expresion anterior en
+	// public static final int resultado=1
+	// por lo que las variables deben ser publics static y final
+	
+	
 	public int sumar(int a, int b);
 
 	public int restar(int a, int b);
@@ -29,7 +33,10 @@ public abstract interface OperacionesMatematicas {
 	
 	
 	static int potencia() {
-		
+		return 2;
+	}
+	
+	public static int potencia2() {
 		return 2;
 	}
 	// private int dividir2(int a, int b);
