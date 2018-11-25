@@ -1,5 +1,6 @@
 package com.celmam.ocaj.chapter5.interfaces;
 
+//An interface can extends many other interfaces
 public abstract interface OperacionesMatematicas {
 
 	public int resultado = 1;

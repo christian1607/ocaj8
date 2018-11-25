@@ -5,6 +5,9 @@ package com.celmam.ocaj.chapter6;
 /*
  * RuntimeExceptions=unchecked Exceptions
  * Exception subclass = checked exceptions
+ * 
+ * 
+ * Throwable is the major class subclasses are Exception and Error
  * */
 public class MyException extends Exception{
 
