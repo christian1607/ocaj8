@@ -1,5 +1,7 @@
 package com.celmam.ocaj.chapter6;
 
+import java.io.IOException;
+
 public class Hijo  extends Padre{
 
 	/* This is a valid method overriden, if tyhe parent method throws a exception the child 
@@ -19,6 +21,17 @@ public class Hijo  extends Padre{
 		
 		System.out.println("Trabajando");
 		
+	}
+	
+	
+	public void estudiar() {
+		
+		try {
+			System.out.println("Buscando Archivos");
+		    throw new IOException("No se encontraron archivos ");
+		} catch (IOException e) {
+			// TODO: handle exception
+		}
 	}
 	
 	
