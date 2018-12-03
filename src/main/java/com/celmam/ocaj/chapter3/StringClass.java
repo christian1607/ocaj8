@@ -92,6 +92,14 @@ public class StringClass {
 		 System.out.println(empresa2);
 		 System.out.println(empresa==empresa2);
 			
+		 
+		 
+		 //Be careful, because when a String is declare as null and then it is concatenades with string
+		 // the result is mull+the_word
+		 String stringNulo=null;
+		 stringNulo=stringNulo+"World";
+		 System.out.println(stringNulo);
+		 
 			 
 		 
 	}
