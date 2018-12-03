@@ -31,5 +31,10 @@ public class Circle extends Shape {
 	}
 
 	
+	//Is valid to have a main method in a abstract class
+	public static void main(String args[]) {
+		System.out.println("Main methos in abstract class");	
+	}
+	
 
 }
