@@ -68,12 +68,7 @@ public class DatesAndTimes {
 		
 		//Can be composed from a date a time
 		System.out.println("LocalDateTime compuesto: "+LocalDateTime.of(date, time));
-		
-		
-		
-		
-		
-		
+			
 		
 		//OPERATIONS WITH DATES AND TIMES
 		
@@ -114,9 +109,11 @@ public class DatesAndTimes {
 
 
 		//Parsing dates from String
-		LocalDate dates = LocalDate.parse("2018-04-30", DateTimeFormatter.ISO_LOCAL_DATE);
+		
 		System.out.println(LocalDate.parse("1993-05-07").format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-
+		
+		LocalDate dates = LocalDate.parse("2018-04-30", DateTimeFormatter.ISO_LOCAL_DATE);
+		System.out.println(dates);
 		System.out.println(dates.getYear() + " " + dates.getMonth() + " " + dates.getDayOfMonth());
 
 	}

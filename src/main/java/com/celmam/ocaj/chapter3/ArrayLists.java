@@ -9,6 +9,7 @@ public class ArrayLists {
 
 	public static void main(String args[]) {
 
+		List list23=new ArrayList<>();
 		ArrayList list = new ArrayList<>();
 		list.add(2);
 		list.add("Cadena");
@@ -36,7 +37,8 @@ public class ArrayLists {
 
 		// Or implement the List interface
 		List<String> list6 = new ArrayList<>();
-
+		
+		
 		// using methods of arrarlist
 
 		// add
@@ -102,7 +104,6 @@ public class ArrayLists {
 
 	
 		
-	
 	
 	}
 
