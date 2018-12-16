@@ -66,8 +66,17 @@ public class StringBuilders {
 //		if(wordmagic==cadena) {
 //			System.out.println("Iguales");
 //		}
+		
+		
+		String fullPhoneNumber="xxx-xxx-zzzz";
+		String String=new StringBuilder("xxx-xxx-")+fullPhoneNumber.substring(8);
+		System.out.println(String);
+		
 	}
+
 	
+	
+
 	
 	
 	

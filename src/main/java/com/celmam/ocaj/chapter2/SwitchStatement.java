@@ -33,6 +33,17 @@ public class SwitchStatement {
 		default:
 			System.out.println("Weekday");	
 		}
+		
+		
+		
+		// It's possible to take a value as a parameter instead of a variable
+		switch(2) {
+		case 0:
+			System.out.println("0");	
+		
+		case 2:
+			System.out.println("2");	
+		}
 
 	}
 

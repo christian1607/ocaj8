@@ -36,7 +36,8 @@ public class Alumno implements OperacionesMatematicas {
 	@Override
 	public String descripcion2() {
 		//Aqui se hace llamado al metodo por defecto que tiene la interfaz
-		return descripcion3();
+		System.out.println(OperacionesMatematicas.super.descripcion());
+		return OperacionesMatematicas.super.descripcion2();
 	}
 
 
@@ -49,8 +50,9 @@ public class Alumno implements OperacionesMatematicas {
 			System.out.println(alumno1.restar(4, 2));
 			System.out.println(alumno1.mutliplicar(4, 2));
 			System.out.println(alumno1.dividir(4, 2));
-			System.out.println(alumno1.descripcion());
+			System.out.println(alumno1.descripcion2());
 			System.out.println(OperacionesMatematicas.potencia());
+			
 			
 	}
 

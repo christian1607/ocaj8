@@ -24,12 +24,12 @@ public abstract interface OperacionesMatematicas {
 
 	default String descripcion2() {
 
-		return "implementar las cuatro operaciones basicas.";
+		return "implementar las cuatro operaciones basicas 2.";
 	}
 
 	default String descripcion3() {
 
-		return "implementar las cuatro operaciones basicas.";
+		return "implementar las cuatro operaciones basicas 3.";
 	}
 	
 	
