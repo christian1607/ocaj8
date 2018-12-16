@@ -1,4 +1,4 @@
-package com.celmam.ocaj.chapter3;
+package com.celmam.ocaj.chapter3.arrays;
 
 import java.util.Arrays;
 

@@ -17,6 +17,13 @@ public class Constructors {
 		name = name;
 
 	}
+	
+	public Constructors(int numero) throws Exception {
+
+		throw new Exception("Error en constructor");
+	}
+
+	
 
 	public void methodSameParameterName(String name) {
 		name = name;
