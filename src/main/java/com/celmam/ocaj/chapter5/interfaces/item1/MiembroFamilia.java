@@ -18,6 +18,9 @@ public class MiembroFamilia implements ITareaHijo,ITareaPadre{
 		
 		ITareaPadre tarea2= new MiembroFamilia();
 		System.out.println(tarea2.saludarFamilia());
+		
+		
+		
 	}
 	
 }

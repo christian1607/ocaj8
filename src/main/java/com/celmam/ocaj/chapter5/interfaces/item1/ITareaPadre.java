@@ -9,4 +9,9 @@ public interface ITareaPadre {
 		return "Buenos dias Familia";
 	}
 	
+	
+	public static String comer() {
+		
+		return "comiendo";
+	}
 }

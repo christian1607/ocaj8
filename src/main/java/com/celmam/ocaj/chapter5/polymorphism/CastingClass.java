@@ -4,16 +4,24 @@ package com.celmam.ocaj.chapter5.polymorphism;
 
 public class CastingClass {
 
+	public static void main(String[] args) {
+		Padre p1=new Hijo();
+		
+		Hijo h = (Hijo)p1;
+		
+		//Hijo2 h2=(Hijo2)h;
+		
+		Padre i =(Padre)(I)p1;
+		
+	}
 	
-	Padre p1=new Hijo();
-	
-	Hijo h = (Hijo)p1;
-	
-	Hijo2 h2=(Hijo2)h;
 }
 
 
-class Padre{
+interface I{
+}
+
+class Padre implements I{
 	
 	
 }
