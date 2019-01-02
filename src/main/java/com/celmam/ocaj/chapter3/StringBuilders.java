@@ -55,6 +55,8 @@ public class StringBuilders {
 		System.out.println(reverseWord);
 		
 		
+		
+		//Substring method is immutable
 		StringBuilder wordmagic=new StringBuilder("Altamirano");
 		System.out.println(wordmagic.substring(1,3).length());
 		System.out.println(wordmagic);
@@ -71,6 +73,18 @@ public class StringBuilders {
 		String fullPhoneNumber="xxx-xxx-zzzz";
 		String String=new StringBuilder("xxx-xxx-")+fullPhoneNumber.substring(8);
 		System.out.println(String);
+		
+		
+		
+		StringBuilder apellido=new StringBuilder(10);
+		System.out.println("============");
+		System.out.println(apellido);
+		apellido.append("ta");
+		apellido.insert(0,"Al");
+		System.out.println(apellido);
+		apellido.insert(0, "mirano", 0,6 );
+		System.out.println(apellido);
+		
 		
 	}
 

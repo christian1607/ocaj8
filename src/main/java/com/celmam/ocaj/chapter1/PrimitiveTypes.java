@@ -25,6 +25,9 @@ public class PrimitiveTypes {
 	char _caracter='A';
 	String name;
 	
+	int prueba=2____1;
+	double dopublenumber=2.1_1;
+	
 	
 	
 	public void method() {

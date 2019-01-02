@@ -6,7 +6,12 @@ public class ReferenceType {
 	String nombre;
 	String _nombre$f;
 	String $nombre;
+	String $;
+	String _;
 	
+	void calc() {
+		
+	}
 	
 	
 	//String #nombre;
