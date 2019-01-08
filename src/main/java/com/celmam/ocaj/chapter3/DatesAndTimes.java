@@ -92,7 +92,7 @@ public class DatesAndTimes {
 		LocalDateTime fechaCumple = LocalDateTime.of(1993, 07, 13, 13, 30, 12, 500);
 		System.out.println("Fecha Cumple==>" + fechaCumple);
 
-		Period periodo = Period.ofDays(3);
+		Period periodo = Period.ofDays(3).plusDays(3);
 
 		fechaCumple = fechaCumple.plus(periodo);
 		System.out.println("Fecha Cumple Correjida====>" + fechaCumple);
@@ -103,11 +103,16 @@ public class DatesAndTimes {
 		System.out.println("Formato ISO DATE====>" + fechaCumple.format(DateTimeFormatter.ISO_DATE));
 		System.out.println("Formato ISO DATETIME====>" + fechaCumple.format(DateTimeFormatter.ISO_DATE_TIME));
 		System.out.println("Formato Custom====>" + fechaCumple.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-
+		
 		DateTimeFormatter formatoPeru = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
 		System.out.println("Formato Corto====>" + fechaCumple.format(formatoPeru));
 
-
+		
+		LocalDate fechaCumple2 = LocalDate.of(1993, 07, 13);
+//		System.out.println("Formato  ISO_INSTANT====>" + fechaCumple2.format(DateTimeFormatter.ISO_INSTANT));
+		System.out.println("Formato  ISO_WEEK_DATE====>" + fechaCumple2.format(DateTimeFormatter.ISO_WEEK_DATE));
+		System.out.println("Formato  ISO_WEEK_DATE====>" + fechaCumple2.format(DateTimeFormatter.ISO_OFFSET_DATE));
+		
 		//Parsing dates from String
 		
 		System.out.println(LocalDate.parse("1993-05-07").format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
