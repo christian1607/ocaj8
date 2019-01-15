@@ -102,11 +102,12 @@ public class DatesAndTimes {
 		System.out.println("Formato Basico====>" + fechaCumple.format(DateTimeFormatter.BASIC_ISO_DATE));
 		System.out.println("Formato ISO DATE====>" + fechaCumple.format(DateTimeFormatter.ISO_DATE));
 		System.out.println("Formato ISO DATETIME====>" + fechaCumple.format(DateTimeFormatter.ISO_DATE_TIME));
-		System.out.println("Formato Custom====>" + fechaCumple.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-		
 		DateTimeFormatter formatoPeru = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
 		System.out.println("Formato Corto====>" + fechaCumple.format(formatoPeru));
 
+		System.out.println("Formato Custom====>" + fechaCumple.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+		
+		
 		
 		LocalDate fechaCumple2 = LocalDate.of(1993, 07, 13);
 //		System.out.println("Formato  ISO_INSTANT====>" + fechaCumple2.format(DateTimeFormatter.ISO_INSTANT));

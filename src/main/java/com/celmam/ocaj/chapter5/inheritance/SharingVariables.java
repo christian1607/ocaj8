@@ -1,5 +1,6 @@
 package com.celmam.ocaj.chapter5.inheritance;
 
+//Fields are not override, just hidde
 public class SharingVariables {
 	
 	public static void main(String[] args) {
@@ -14,8 +15,8 @@ public class SharingVariables {
 
 class A{
 	public int i = 10;
-   public void  f(){}
-   public void g(){}
+	public void  f(){}
+	public void g(){}
 }
 
 class B extends A{

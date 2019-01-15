@@ -21,9 +21,13 @@ public class IncrementDecrement {
 
 		char vocal = 'a';
 		System.out.println(++vocal);
+		vocal+=35;
+		System.out.println(vocal);
 
-		z = --y + (1 + y) + w + ++y;
-		System.out.println(z);
+		
+		int a=2,b=3,c=4,d=5;
+		 d= --a + (++a);
+		System.out.println("El valor de D es: " +d);
 
 		int x1 = 3;
 		int y1 = ++x1 * 5 / x1-- + --x1;
@@ -39,8 +43,6 @@ public class IncrementDecrement {
 		
 	}
 	
-	 
-
 }
 
 
