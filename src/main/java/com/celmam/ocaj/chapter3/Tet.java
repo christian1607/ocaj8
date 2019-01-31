@@ -6,7 +6,7 @@ public class Tet {
 
 	public static void main (String... strings) {
 		
-		LocalDate date=LocalDate.of(0, Month.APRIL,0);
+		LocalDate date=LocalDate.of(11, Month.APRIL,10);
 	}
 	
 }
