@@ -9,7 +9,11 @@ public class LambdaFuncionImpl   {
 	
 	public boolean isFunction(String  name,ILambdaFunction funcion) {
 		
-		return funcion.isLambdaFunction(name);
+		try {
+			return funcion.isLambdaFunction(name);
+		} catch (Exception e) {
+			return false;
+		}
 	}
 	
 	

@@ -104,7 +104,17 @@ public class ArrayLists {
 
 	
 		
-	
+//		List<String> listaFlitrar = Arrays.asList("A","B","C","AB","1","BCD");
+		List<String> listaFlitrar = new ArrayList<>();
+		listaFlitrar.add("A");
+		listaFlitrar.add("B");
+		listaFlitrar.add("C");
+		listaFlitrar.add("AB");
+		listaFlitrar.add("1");
+		listaFlitrar.add("BCD");
+		listaFlitrar.removeIf(s->s.startsWith("A"));
+		
+		System.out.println(listaFlitrar);
 	}
 
 	

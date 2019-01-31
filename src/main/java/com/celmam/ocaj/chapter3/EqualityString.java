@@ -30,6 +30,14 @@ public class EqualityString {
 		System.out.println(cadena5.equals(cadena6.trim()));
 
 		
+		String language="Java";
+		String parte1="Ja";
+		String parte2="va";
+		
+		String parte3=parte1+parte2;
+		System.out.println("Sumando partes: ");
+		System.out.println("Sumando partes: "+(language==(parte1+parte2)));
+		System.out.println("1: "+(language==parte3));
 		
 		
 		/* But this behavior does not take effect if we use new keyword for declare a String
