@@ -4,8 +4,8 @@ public class StaticMethods implements IStaticMethod{
 	
 	
 
-	private static String doStaticMethod() {
-		return "It is a static method class";
+	public static Integer doStaticMethod() {
+		return 1;
 	} 
 	
 	
