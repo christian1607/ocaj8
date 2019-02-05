@@ -16,6 +16,7 @@ public class PrimitiveTypes {
 	short number1=25555; 		// (+-)2^16
 	int number2=0; 			// (+-)2^32
 	int numberInt2=1000_00;
+	//int numberInt3=1,000,000; not valid
 	int numberInt=0xE;
 	long number3=2555555555555555555L; 	// (+-)2^64
 	
